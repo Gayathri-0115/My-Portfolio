@@ -1,0 +1,172 @@
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+.container-contact h2 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 0 5rem;
+}
+
+.contact-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text p {
+    word-spacing: 0.2rem;
+    line-height: 1.9rem;
+}
+
+.ph-mail p {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+
+.contact-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.field {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: grey;
+    padding: 0.5rem 2rem;
+    width: 300px;
+}
+
+input[type="email"] {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: grey;
+    padding: 0.5rem 2rem;
+    width: 300px;
+}
+
+textarea {
+    padding: 0.5rem 2rem;
+    background-color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(44, 37, 37);
+    font-size: 0.8rem;
+}
+
+input[type="email"]::placeholder {
+    color: rgb(44, 37, 37);
+    font-size: 0.8rem;
+}
+
+textarea::placeholder {
+    color: rgb(44, 37, 37);
+    font-size: 0.8rem;
+}
+
+.contact-right button[type='submit'] {
+    padding: 0.9rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+}
+
+.contact-right button[type='submit']:hover {
+    background: linear-gradient(180deg, rgb(58, 207, 245), rgb(241, 60, 241));
+}
+
+@media (max-width:768px) {
+    .container-contact {
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .container-contact {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem
+    }
+
+    .text {
+        word-spacing: 0.1rem;
+        line-height: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .ph-mail p {
+        font-size: 0.8rem;
+    }
+
+    .field label {
+        font-size: 0.9rem;
+    }
+
+    .field input {
+        width: 300px;
+    }
+
+    .textarea {
+        padding: 0.5rem 1rem;
+    }
+
+    .field button {
+        padding: 0.9rem 1.5rem;
+    }
+
+    textarea {
+        padding: 0.5rem 1rem;
+        width: 300px;
+    }
+
+    .ph-mail p {
+        text-align: center;
+    }
+
+    .text p {
+        text-align: center;
+    }
+}

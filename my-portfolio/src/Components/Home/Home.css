@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 8rem 2rem;
+}
+.container h2 {
+    font-size: 3rem;
+}
+.container h2 b{
+    font-size: 3rem;
+     background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main{
+     background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    word-spacing: 0.3rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.btns button{
+    transition: all 0.5s ease;
+}
+.github {
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 25px;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+    border: 2px solid rgb(90, 87, 87);
+}
+
+.linkedin {
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 25px;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+    border: 2px solid grey;   
+}
+
+.connect{
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color:black;
+    background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+}
+.container button:hover{
+    background: linear-gradient(180deg, rgb(58, 207, 245), rgb(241, 60, 241));
+}
+@media (max-width:768px){
+    .container{
+        gap: 1rem;
+        margin: 4rem 2.5rem;
+    }
+    .container h2{
+        font-size: 1.5rem;
+    }
+    .container h2 b{
+        font-size: 1.5rem;
+    }
+    .container p{
+        font-size: 1rem;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .btns{
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .github{
+        padding: 0.1rem 0.1rem;
+    }
+    .linkedin{
+        padding: 0.1rem 0.1rem;
+    }
+    .connect{
+        font-weight: 400;
+    }
+    
+
+}

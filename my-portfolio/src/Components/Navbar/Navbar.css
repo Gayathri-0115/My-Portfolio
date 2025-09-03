@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 170px;
+    gap: 20rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.nav-menu li:hover {
+    background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, rgb(58, 207, 245), rgb(241, 60, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anchorlink {
+    text-decoration: none;
+    color: white;
+}
+.mob-open{
+    display: none;
+}
+.mob-close {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+        font-size: 1.5rem;
+    }
+
+    .mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 125px;
+        width: 30px;
+          font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        width: 320px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+
+    .nav-menu li {
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+        padding: 0.5rem 1rem;
+    }
+}
