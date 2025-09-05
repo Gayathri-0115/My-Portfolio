@@ -12,8 +12,10 @@ const Home = () => {
           <a href="https://github.com/Gayathri-0115/">
             <button className='github'><i className="fa-brands fa-github "></i></button>
           </a>
+          <a href="https://www.linkedin.com/in/gayathri0115/">
+            <button className='linkedin'><i className="fa-brands fa-linkedin"></i></button>
+          </a>
           
-          <button className='linkedin'><i className="fa-brands fa-linkedin"></i></button>
           <AnchorLink href='#contact' className='anchorlink'><button className="connect">Connect with me </button></AnchorLink>
         </div>
       </div>

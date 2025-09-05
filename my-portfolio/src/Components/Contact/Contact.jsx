@@ -22,7 +22,7 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert("Success", res);
+      alert("Mail sent Successfully", res);
     }
   };
     return (
@@ -36,7 +36,7 @@ const Contact = () => {
                         </p>
                         </div>
                         <div className='ph-mail'>
-                            <p><i className="fa-solid fa-phone"></i><b>6526562827</b></p>
+                            <p><i className="fa-solid fa-phone"></i><b>+91 9791990163</b></p>
                         </div>
                         <div className='ph-mail'>
                             <p><i className="fa-solid fa-envelope"></i><b>gayathri5611416@gmail.com</b></p>

@@ -62,7 +62,7 @@ const Project = () => {
                     <div className='project-item'>
                         <img src={todo} alt="" />
                         <p className='head'>To-Do List</p>
-                        <a href="#"><button>Check Out Now on Live <i className="fa-solid fa-arrow-right"></i></button></a>
+                        <a href="https://mern-task-manager-0989.netlify.app/"><button>Check Out Now on Live <i className="fa-solid fa-arrow-right"></i></button></a>
                     </div>
                 </div>
             </div>
