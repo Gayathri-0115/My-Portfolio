@@ -45,10 +45,10 @@ const Contact = () => {
                     <div className="contact-right">
                         <form onSubmit={onSubmit} className='field'>
                         
-                            <label htmlFor="">Your Name</label>
+                            <label htmlFor="name">Your Name</label>
                             <input type="text"  placeholder='Enter your name' />
                         
-                            <label htmlFor="">Your Email</label>
+                            <label htmlFor="email">Your Email</label>
                             <input type="email" placeholder='Enter your email' />
                        
                             <label htmlFor="">Write your message here</label>
